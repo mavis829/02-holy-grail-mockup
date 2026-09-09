@@ -90,6 +90,8 @@
   color: black;
   text-align: center;
   min-height: 200px;
+  display:grid;
+  gap: 14px;   
 }
 
 .card p {
