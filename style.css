@@ -40,8 +40,7 @@
   grid-row: 2/4;
   display:grid;
   gap:50px;
-  justify-items: center;
-  align-items: center;
+  grid-template-rows: auto 1fr 1fr 1fr;
 }
 
 .sidebar .photo {
