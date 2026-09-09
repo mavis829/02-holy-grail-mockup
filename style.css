@@ -7,7 +7,7 @@
   text-align: center;
   display:grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: auto auto 1fr auto; 
+  /* not required grid-template-rows: auto auto 1fr auto; */
   gap: 4px;
   min-height: 100vh;
 }
@@ -28,12 +28,24 @@
   align-items:center;
 }
 
+.logo {justify-self: start;}
+.menu {align-self: center;}
+
+
 .nav ul,
 .menu ul {
   font-size: 16px;
   list-style-type: none;
   display:grid;
-  grid-auto-flow:column;
+}
+
+.nav ul,
+{
+  grid-template-columns: repeat(3,1fr);
+}
+.menu ul,
+{
+  grid-template-columns: repeat(4,1fr);
 }
 
 .sidebar {
@@ -50,7 +62,7 @@
   font-size: 12px;
   font-weight: normal;
   border-radius: 10px;
-  
+  align-items: center;
 }
 
 
@@ -99,6 +111,7 @@
   color: black;
   font-weight: normal;
   font-size: 14px;
+  padding: 5px;
 }
 
 .card .title {
